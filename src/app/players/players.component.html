@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-player-edit (playerAdded)="onAddPlayer($event)"></app-player-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item" *ngFor="let player of players">
+       {{ player.name }} ({{ player.age }} years old)
+      </a>
+    </ul>
+  </div>
+</div>
