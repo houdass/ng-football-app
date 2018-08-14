@@ -1,0 +1,184 @@
+######### APP #########
+
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- <app-teams></app-teams>
+      <app-players></app-players> -->
+    </div>
+  </div>
+</div>
+
+######### HEADER #########
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Ng Football App</a>
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a>Teams</a></li>
+        <li><a>Players</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle">Manage <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a>Save Data</a></li>
+            <li><a>Fetch Data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+a {
+  cursor: pointer;
+}
+
+######### TEAMS #########
+
+<div class="row">
+  <div class="col-sm-6">
+    <app-team-list></app-team-list>
+  </div>
+  <div class="col-sm-6">
+    <app-team-detail></app-team-detail>
+  </div>
+</div>
+
+######### TEAM LIST #########
+
+<div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-success">New Team</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <app-team-item></app-team-item>
+  </div>
+</div>
+
+######### TEAM ITEM #########
+
+<a href="#" class="list-group-item clearfix">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">Name</h4>
+    <p class="list-group-item-text">Description</p>
+  </div>
+  <span class="pull-right">
+    <img src="" alt="" class="img-responsive">
+  </span>
+</a>
+
+img {
+  max-height: 50px;
+}
+
+######### TEAM DETAIL #########
+
+<div class="row">
+  <div class="col-sm-12">
+    <img src="" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Team Name</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="btn-group">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle">
+        Manage Team <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="">To Players</a></li>
+        <li><a href="">Edit Team</a></li>
+        <li><a href="">Delete Team</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    Description
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item">
+        Team players list
+      </li>
+    </ul>
+  </div>
+</div>
+
+######### PLAYERS #########
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-player-edit></app-player-edit>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item">
+        Player item
+      </a>
+    </ul>
+  </div>
+</div>
+
+
+a {
+  cursor: pointer;
+}
+
+######### PLAYER EDIT #########
+
+<div class="row">
+  <div class="col-xs-12">
+    <form>
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">Name</label>
+          <input id="name" class="form-control">
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount">Age</label>
+          <input id="amount" type="number" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success">Add</button>
+          <button class="btn btn-danger" type="button">Delete</button>
+          <button class="btn btn-primary" type="button">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+######### TEAMS Data #########
+
+this.teams = [
+      new Team('FC Barcelone', 'Més que un club', 'http://fc-barcelone.com/assets/img/fcb-logo-big.png'),
+      new Team(
+        'Real Madrid',
+        'Hala Madrid !',
+        'https://upload.wikimedia.org/wikipedia/fr/thumb/c/c7/Logo_Real_Madrid.svg/731px-Logo_Real_Madrid.svg.png'
+      )
+    ];

@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img [src]="team.image" [alt]="team.name" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>{{ team.name }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="btn-group">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle">
+        Manage Team <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="">To Players</a></li>
+        <li><a href="">Edit Team</a></li>
+        <li><a href="">Delete Team</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    {{ team.description }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item">
+        Team players list
+      </li>
+    </ul>
+  </div>
+</div>
