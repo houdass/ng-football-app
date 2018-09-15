@@ -1,0 +1,9 @@
+<app-header (selectedFeature)="onSelectFeature($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <app-teams *ngIf="feature === 'teams'"></app-teams>
+      <app-players *ngIf="feature === 'players'"></app-players>
+    </div>
+  </div>
+</div>

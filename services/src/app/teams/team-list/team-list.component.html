@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-success">New Team</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <app-team-item *ngFor="let team of teams" [team]="team"></app-team-item>
+  </div>
+</div>
