@@ -28,4 +28,8 @@ export class TeamService {
   addPlayersToList(players: Player[]) {
     this.playerService.addPlayers(players);
   }
+
+  getTeam(id: number): Team {
+    return this.teams[id];
+  }
 }
