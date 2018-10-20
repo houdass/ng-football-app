@@ -12,6 +12,12 @@
 
 <a href="https://github.com/houdass/ng-football-app/tree/master/services" target="_blank">Dossier Services</a> : De la vidéo 7- 1 jusqu'à la partie 7- 9
 
+
+# Code Source de la partie routing (Démo)
+
+<a href="https://github.com/houdass/ng-routing-demo" target="_blank">Présentation/Démo Routing</a> : De la vidéo 8- 1 jusqu'à la partie 8- 18
+
+
 # Code Source de la partie routing
 
 <a href="https://github.com/houdass/ng-football-app/tree/master/routing" target="_blank">Dossier Routing</a> : De la vidéo 8- 19 jusqu'à la partie 8- 25
