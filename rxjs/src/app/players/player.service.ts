@@ -1,9 +1,9 @@
-import { EventEmitter, Injectable } from '@angular/core';
 import { Player } from './player.model';
+import { Subject } from 'rxjs';
 
 export class PlayerService {
   players: Player[] = [new Player('Messi', 30), new Player('Ronaldo', 33)];
-  playersChanged = new EventEmitter<Player[]>();
+  playersChanged = new Subject<Player[]>();
 
   constructor() {}
 
@@ -13,11 +13,11 @@ export class PlayerService {
 
   addPlayer(player: Player) {
     this.players.push(player);
-    this.playersChanged.emit(this.players.slice());
+    this.playersChanged.next(this.players.slice());
   }
 
   addPlayers(players: Player[]) {
     this.players.push(...players);
-    this.playersChanged.emit(this.players.slice());
+    this.playersChanged.next(this.players.slice());
   }
 }
